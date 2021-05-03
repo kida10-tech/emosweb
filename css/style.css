@@ -1,0 +1,181 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  margin:0;
+}
+
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+  color:white;
+  text-align: center;
+}
+
+.bar {
+  height: 45px;
+  background: rgb(103,103,103);
+  background: linear-gradient(90deg, rgba(103,103,103,1) 0%, rgba(43,43,43,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:'Titillium Web', Courier, monospace;
+  padding-bottom: 6px;
+}
+
+.menucel {
+  color: white;
+  font-size: 2.2em;
+  cursor: pointer;
+}
+
+.mobilemenu {
+  position: fixed;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  top: -300px;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  font-family:'Raleway', Courier, monospace;
+  font-weight: 200;
+  padding: 2px 0 2px 0;
+}
+.btn:hover {
+  color: black;
+}
+
+.transition {
+  -webkit-transition:all .4s linear;
+  -moz-transition:all .4s linear;
+  -o-transition:all .4s linear;
+  transition:all .4s linear;
+  -ms-transition:all .4s linear;
+}
+
+.section {
+  color: grey;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 0% 5% 0%;
+}
+
+.red {
+  background-color: #BF0025;
+}
+
+.white {
+  color: white;
+}
+
+.contenido {
+  font-family:'Raleway', Courier, monospace;
+  margin: 5% 5% 5% 5%;
+  width: 90%;
+  text-align: center;
+}
+
+.bloque {
+  background-color: rgb(161, 160, 160);
+  width: 42%;
+  margin: 5% 2% 5% 2%;
+  padding: 5% 2% 5% 2%;
+  text-align: center;
+  border-radius: 6px;
+  color: white;
+  font-family:'Raleway', Courier, monospace;
+}
+
+.fas {
+  font-size: 2em;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+  margin-bottom: 20px;
+  font-family: 'Raleway',sans-serif;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+form input[type = 'submit'] {
+  width: 50%;
+  cursor: pointer;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  margin-bottom: 10px;
+  color:white;
+  font-family: 'Raleway',sans-serif;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+::placeholder { 
+  color:white;
+  font-family: 'Raleway',sans-serif;
+  background-color: transparent;
+}
+
+#btncon {
+  width:200px;
+  margin: 0 auto 0 auto;
+  padding: 5px 0px 5px 0px;
+  border: 1px solid white;
+  font-family: 'Titillium Web',sans-serif;
+  font-weight: 400;
+  font-size: 110%;
+  background-color: transparent;
+  color:white;
+  cursor:pointer;
+}
+#btncon:hover {
+  border: 1px solid #BF0025;
+  color:white;
+  background-color: black;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.textarea-error {
+  background-color: black;
+  color: white;
+  font-size: 2em;
+  margin-top: -1rem;
+  transition: all 800ms ease;
+}
+
+.none {
+  display: none;
+}
+
+.is-active {
+  transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
+}

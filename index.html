@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>EMOS web</title>
+    <link rel="icon" href="img/favicon.jpeg" type="image/png">
+
+    
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--JAVASCRIPT-->
+    <!--JQUERY-->
+    
+    <!--WEB FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!--FONTAWSOME-->
+    <script src="https://kit.fontawesome.com/6a9c57c0e6.js" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+  </head>
+  <body>
+    <div class="bar">
+      <div class="menucel">&#8801;</div>
+    </div>
+    <div class="mobilemenu">
+      <a href="#institucional"><div class="btn transition">INSTITUCIONAL</div></a>
+      <a href="#covid"><div class="btn transition">COVID</div></a>
+      <a href="#noticias"><div class="btn transition">NOTICIAS</div></a>
+      <a href="#contacto"><div class="btn transition">CONTACTO</div></a>
+    </div>
+    <div class="section"> 
+      <div class="contenido" id="institucional"> Hola somos EMOS, una empresa de bien.<br>Nuestra empresa se divide en: </div>
+      <div class="bloque"><i class="fas fa-house-user"></i><br><br>
+        FIDEICOMISO<br>Mi Casa Mi Vida 
+      </div>
+      <div class="bloque"><i class="fas fa-recycle"></i><br><br>
+        R.S.U. (Residuos Solidos Urbanos)</div>
+    </div>
+    <div class="section red" id="covid">Covid19
+      <div class="contenido white"><p>En epoca de pandemia, RESPETEMOS LOS PROTOCOLOS.</p>
+        <img id="covid1" src="img/covid1.jpeg" alt="CUIDATE" width="100%" height="auto">
+      </div>
+    </div>
+    <div class="section" id="noticias">NOTICIAS</div>
+    <div class="section red" id="contacto">
+      <div class="title"><h2>CONTACTO</h2></div>
+      <form class="contact-form" action="https://formsubmit.co/diego.martinez.giardini@gmail.com" target="_blank" method="POST" >
+        <input type="text" name="name" id="name" placeholder="Nombre" title="Solo acepta letras y espacios en blanco" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"/>
+        <input type="text" name="email" id="email" placeholder="Email" title="Email incorrecto" name="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"/>
+        <textarea name="message" id="message" rows="5" placeholder="Mensaje" required data-pattern="^.{1,255}$" placeholder="Escribe tus comentarios" title="Tu comentario no debe exceder los 255 caracteres"></textarea>
+        <input id="btncon" type="submit" value="Enviar">
+      </form>
+    </div>
+
+    <button class="dark-btn"> 🌙  ☀️ </button>
+  
+    <div class="pie"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
