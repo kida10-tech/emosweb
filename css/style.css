@@ -132,6 +132,10 @@ input {
   border-bottom: 1px solid white;
 }
 
+.message{
+  color: white;
+}
+
 ::placeholder { 
   color:white;
   font-family: 'Raleway',sans-serif;
@@ -165,17 +169,29 @@ input {
 .textarea-error {
   background-color: black;
   color: white;
-  font-size: 2em;
+  font-size: 80%;
   margin-top: -1rem;
+  margin-bottom: 1rem;
   transition: all 800ms ease;
+  padding: 10px;
 }
 
 .none {
   display: none;
 }
 
-.is-active {
-  transform: translate(0, 0);
-  opacity: 1;
-  visibility: visible;
+.textarea-error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+@keyframes show-message{
+  0%{
+      visibility: hidden;
+      opacity: 0;
+  }
+  100%{
+      visibility: visible;
+      opacity: 1;
+  }
 }

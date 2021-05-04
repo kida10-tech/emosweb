@@ -23,18 +23,19 @@ $(".mobilemenu").animate({'top':'-300px',},500);
 
 //Envio de formulario a email:
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     function formSendInfo() {
         document.addEventListener('submit', (e) => {    
         }) 
     }
     formSendInfo();
-})
+})*/
 
 document.addEventListener('DOMContentLoaded', () => {
 
     function textAreaValidate() {
-      const $textArea = document.getElementById("message");
+      const $form = document.querySelector(".contact-form")
+      const $textArea = document.querySelector(".message");
       const $span = document.createElement("span");
       $span.id = $textArea.name;
       $span.textContent = $textArea.title;
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       $textArea.insertAdjacentElement("afterend", $span)
     }
     document.addEventListener("keyup", (e) => {
-      if (e.target.matches(".contact-form [textarea]")) {
+      if (e.target.matches(".message")) {
         let $input = e.target;
         let pattern = $input.dataset.pattern;
   
@@ -56,5 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     });
+    document.addEventListener("submit", (e) =>{
+      
+    })
     textAreaValidate();
   });
