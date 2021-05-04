@@ -21,15 +21,7 @@ $("body,btn").click(function(){
 $(".mobilemenu").animate({'top':'-300px',},500);
 });
 
-//Envio de formulario a email:
-
-/*document.addEventListener('DOMContentLoaded', () => {
-    function formSendInfo() {
-        document.addEventListener('submit', (e) => {    
-        }) 
-    }
-    formSendInfo();
-})*/
+//Envio de formulario a email
 
 document.addEventListener('DOMContentLoaded', () => {
 
