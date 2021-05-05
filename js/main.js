@@ -15,10 +15,10 @@ setInterval(function () {
 
 $(".menucel").click(function(){ 
     event.stopPropagation()
-$(".mobilemenu").animate({'top':'0px',},500);
+$("nav").animate({'top':'0px',},500);
 });
 $("body,btn").click(function(){
-$(".mobilemenu").animate({'top':'-300px',},500);
+$("nav").animate({'top':'-300px',},500);
 });
 
 //Envio de formulario a email

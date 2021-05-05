@@ -6,61 +6,80 @@
     <title>EMOS web</title>
     <link rel="icon" href="img/favicon.png" type="image/png">
 
-    
     <!--STYLESHEET-->
     <link rel="stylesheet" href="css/style.css">
-    
-    <!--JAVASCRIPT-->
-    <!--JQUERY-->
     
     <!--WEB FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!--FONTAWSOME-->
-    <script src="https://kit.fontawesome.com/6a9c57c0e6.js" crossorigin="anonymous"></script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
   </head>
   <body>
-    <div class="bar">
+    
+    <header>
       <img height="20px" width="auto" src="img/logo1.png">
       <div class="menucel">&#8801;</div>
       <div class="dark-btn"><i class="fas fa-moon"></i></div>
-    </div>
-    <div class="mobilemenu">
-      <a href="#institucional"><div class="btn transition">INSTITUCIONAL</div></a>
-      <a href="#covid"><div class="btn transition">COVID</div></a>
-      <a href="#noticias"><div class="btn transition">NOTICIAS</div></a>
-      <a href="#contacto"><div class="btn transition">CONTACTO</div></a>
-    </div>
-    <div class="section"> 
-      <div class="contenido" id="institucional"> Hola somos EMOS, una empresa de bien.<br>Nuestra empresa se divide en: </div>
-      <div class="bloque"><i class="fas fa-house-user"></i><br><br>
-        FIDEICOMISO<br>Mi Casa Mi Vida 
-      </div>
-      <div class="bloque"><i class="fas fa-recycle"></i><br><br>
-        R.S.U. (Residuos Solidos Urbanos)</div>
-    </div>
-    <div class="section red" id="covid">
-      <div class="contenido white"><p>En epoca de pandemia, RESPETEMOS LOS PROTOCOLOS.</p>
-        <img id="covid1" src="img/covid1.jpeg" alt="CUIDATE" width="100%" height="auto">
-      </div>
-    </div>
-    <div class="section" id="noticias">NOTICIAS</div>
-    <div class="section red" id="contacto">
-      <div class="title"><h2>CONTACTO</h2></div>
-      <form class="contact-form" action="https://formsubmit.co/vamorilla@hotmail.com.ar" target="_blank" method="POST" >
-        <input type="text" name="name" id="name" placeholder="Nombre" title="Solo acepta letras y espacios en blanco" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"/>
-        <input type="text" name="email" id="email" placeholder="Email" title="Email incorrecto" name="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"/>
-        <textarea name="message" class="message" cols="50" rows="5" required data-pattern="^.{1,200}$" placeholder="Escribe tus comentarios" title="Tu comentario no debe exceder los 200 caracteres"></textarea>
-        <input id="btncon" type="submit" value="Enviar">
-      </form>
-    </div>
-  
-    <div class="pie"></div>
+    </header>
 
+    <nav>
+      <ul>
+        <li><a class="btn transition" href="#institucional">INSTITUCIONAL</a></li>
+        <li><a class="btn transition" href="#covid">COVID</a></li>
+        <li><a class="btn transition" href="#noticias">NOTICIAS</a></li>
+        <li><a class="btn transition" href="#contacto">CONTACTO</a></li>
+      </ul>
+    </nav>      
+       
+    <main>
+      <section> 
+        <div class="contenido" id="institucional"> 
+          <h2>Hola somos EMOS</h2><br>
+          Nuestra empresa se divide en:
+        </div>
+        <div class="bloque">
+          <i class="fas fa-house-user"></i><br><br>
+          FIDEICOMISO<br>Mi Casa Mi Vida 
+        </div>
+        <div class="bloque">
+          <i class="fas fa-recycle"></i><br><br>
+          R.S.U. (Residuos Solidos Urbanos)
+        </div>
+      </section>
+
+      <section class="red" id="covid">
+        <div class="contenido white">
+          <p>En epoca de pandemia, RESPETEMOS LOS PROTOCOLOS.</p>
+          <img id="covid1" src="img/covid1.jpeg" alt="CUIDATE" width="100%" height="auto">
+        </div>
+      </section>
+
+      <section id="noticias">
+        <h2>NOTICIAS</h2>
+
+      </section>
+
+      <section class="red" id="contacto">
+        <h2>CONTACTO</h2>
+        <form class="contact-form" action="https://formsubmit.co/vamorilla@hotmail.com.ar" target="_blank" method="POST" >
+          <input type="text" name="name" id="name" placeholder="Nombre" title="Solo acepta letras y espacios en blanco" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"/>
+          <input type="text" name="email" id="email" placeholder="Email" title="Email incorrecto" name="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"/>
+          <textarea name="message" class="message" cols="50" rows="5" required data-pattern="^.{1,200}$" placeholder="Escribe tus comentarios" title="Tu comentario no debe exceder los 200 caracteres"></textarea>
+          <input id="btncon" type="submit" value="Enviar">
+        </form>
+      </section>
+    </main>
+
+    <footer></footer>
+  
+
+    <!--FONTAWSOME-->
+    <script src="https://kit.fontawesome.com/6a9c57c0e6.js" crossorigin="anonymous"></script>
+    
+    <!--JQERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!--JAVASCRIPT-->
     <script src="js/main.js"></script>
   </body>
 </html>
