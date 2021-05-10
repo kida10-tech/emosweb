@@ -13,13 +13,20 @@ setInterval(function () {
 
 },4000);
 
-$(".menucel").click(function(){ 
-    event.stopPropagation()
-$("nav").animate({'top':'0px',},500);
-});
-$("body,btn").click(function(){
-$("nav").animate({'top':'-300px',},500);
-});
+//Menú
+
+const d = document;
+
+const $btnMenu = d.getElementById("menu-cel");
+const $nav = d.getElementById("nav-bar");
+
+$btnMenu.addEventListener("click", (e)=>{
+  $nav.style.display = "block";
+})
+
+$nav.addEventListener("click", (e)=>{
+  $nav.style.display = "none";
+})
 
 //Envio de formulario a email
 
